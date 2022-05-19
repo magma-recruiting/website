@@ -1,5 +1,4 @@
 $background-color: #eeeeee;
-$monospace-hierarchy: Courier, Menlo, monospace;
 $accent-color: #b12b2b;
 
 * {
@@ -99,18 +98,6 @@ div#main {
 
 input {
   color: black;
-}
-
-.highlighter-rouge {
-  > .highlight {
-    padding: 20px;
-    overflow: scroll;
-    border-radius: 20px;
-  }
-
-  * {
-    font-family: $monospace-hierarchy;
-  }
 }
 
 /* Mobile */
