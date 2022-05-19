@@ -1,6 +1,4 @@
 pages:
-  - title: Home
-    url: /
   - title: About
     url: /about
   - title: For Students

@@ -1,7 +1,7 @@
 <nav>
 	<ul>
 		<li>
-			<a id="title" href="{{ '/' | relative_url }}" tabindex="0">Prowl</a>
+			<a id="title" href="{{ '/' | relative_url }}"{% if page.url == navigation_page.url %} id="currentPage"{% endif %} tabindex="0">Prowl</a>
 		</li>
 		{% for navigation_page in site.data.navigation.pages %}
 		<li>
