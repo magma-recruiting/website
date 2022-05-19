@@ -1,0 +1,10 @@
+socialIcons:
+  - name: LinkedIn
+    url:
+    icon: linkedin.png
+  - name: Twitter
+    url:
+    icon: twitter.png
+  - name: Email
+    url:
+    icon: email.png

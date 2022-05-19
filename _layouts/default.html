@@ -1,0 +1,47 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- Analytics-->
+		{% if jekyll.environment == "production" %}
+			{% include gtag.html %}
+		{% endif %}
+
+		<!-- Generic -->
+		<meta name="language" content="english">
+		<meta name="copyright" content="Prowl">
+
+		<!-- SEO -->
+		{% seo %}
+		{% include icons.html %}
+
+		<!-- Styles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#1c1c1c">
+		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+		<!-- Feeds -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/blog/feed.rss' | relative_url }}">
+		<link type="application/atom+xml" rel="alternate" href="{{ '/blog/feed.atom' | relative_url }}" title="{{ site.data.feed.title }}">
+
+		<!-- JavaScript -->
+		{% for scriptFileName in page.scripts %}
+			<script src="{{ '/assets/scripts/' | append: scriptFileName | relative_url }}"></script>
+		{% endfor %}
+	</head>
+	<body>
+		<div id="topBar">
+			<div>
+				{% include nav.html %}
+			</div>
+		</div>
+		<div id="main">
+			{{ content }}
+		</div>
+		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Prowl</p>
+	</body>
+</html>

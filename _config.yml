@@ -1,0 +1,42 @@
+timezone: Australia/Melbourne
+
+permalink: /:title
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-coffeescript
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+# SCSS
+sass:
+  style: compressed
+
+# SEO
+title: Prowl
+tagline: Project Based Work
+description: Project-based work for university students.
+author:
+  twitter:
+twitter:
+  username:
+  card: summary
+logo: /assets/images/siteIcons/apple-touch/apple-icon.png
+social:
+  name: Gavin Douch
+  links:
+locale: en-AU
