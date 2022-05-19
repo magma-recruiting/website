@@ -10,8 +10,9 @@ nav {
   display: block;
   margin: 0 auto 0 auto;
   width: 100%;
-  box-shadow: 0 0 15px 0 black;
+  box-shadow: 0 0 15px 0 lightgray;
   height: 85px;
+  background-color: white;
 
   > ul {
     display: inline-block;
@@ -47,12 +48,9 @@ nav {
         height: 100%;
         padding: 0 20px;
 
-        &:hover {
-          border-bottom: 5px solid $accent-color;
-        }
-
-        &#currentPage {
-          border-bottom: 5px solid $accent-color;
+        &:hover, &#currentPage {
+          border-color: transparent;
+          box-shadow: 0 -5px $accent-color inset;
         }
       }
     }
