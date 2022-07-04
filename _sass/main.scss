@@ -7,48 +7,43 @@ $accent-color: #b12b2b;
 }
 
 nav {
-  display: block;
+  display: flex;
   margin: 0 auto 0 auto;
   width: 100%;
-  box-shadow: 0 0 15px 0 lightgray;
-  height: 85px;
-  background-color: white;
 
   > ul {
-    display: inline-block;
     height: 100%;
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex: 1;
+    padding: 10px;
 
     > li {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      float: left;
-      height: 100%;
-        margin-left: 40px;
+      flex: 1;
+
+      margin: 10px;
+      border-radius: 15px;
+      background-color: #003049;
+      transition: flex 0.5s;
+
+      &.currentPage {
+        box-shadow: -5px 5px #D62828 ;
+      }
+
+      &:hover {
+        flex: 1.5;
+      }
 
       > a {
         text-decoration: none;
+        font-weight: bold;
         display: flex;
+        flex: 1;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
-        padding: 0 20px;
-
-        &#title {
-          font-size: 250%;
-          text-decoration: none;
-          font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-          color: $accent-color;
-          margin: auto 0 auto 0;
-        }
-
-        &:hover, &.currentPage {
-          border-color: transparent;
-          box-shadow: 0 -5px $accent-color inset;
-        }
+        padding: 10px;
+        color: white;
       }
     }
   }
@@ -74,21 +69,20 @@ body {
 p#footer {
   display: flex;
   margin: auto;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   font-size: small;
   position: relative;
   bottom: 60px;
   height: 60px;
-
 }
 
 div#main {
-  width: 90%;
+  width: 80%;
   padding-bottom: 60px;
   margin: 0 auto 0 auto;
   position: relative;
-  min-height: calc(100% - 60px - 20px);
+  min-height: calc(100% + 60px);
 }
 
 input {
@@ -111,10 +105,5 @@ input {
   div#main {
     width: 90%;
     padding-bottom: 90px;
-  }
-
-  a#title {
-    font-size: 2.7em;
-    text-align: center;
   }
 }

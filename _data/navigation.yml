@@ -1,9 +1,11 @@
 pages:
+  - title: Home
+    url: /
+  - title: Students
+    url: /students
+  - title: Companies
+    url: /companies
   - title: About
     url: /about
-  - title: For Students
-    url: /students
-  - title: For Companies
-    url: /companies
   - title: Contact
     url: /contact
