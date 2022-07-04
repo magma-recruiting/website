@@ -64,6 +64,8 @@ html, body {
 
 body {
   background-color: $background-color;
+  background-image: url("/assets/images/background.png");
+  background-repeat: repeat;
 }
 
 p#footer {
