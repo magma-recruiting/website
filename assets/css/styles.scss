@@ -1,4 +1,8 @@
 ---
 ---
+$background-color: #f4f6fc;
+$accent-color: #b12b2b;
+$background-image: url("{{ '/assets/images/background.png' | relative_url }}");
+
 @import "main";
 @import "logo";
