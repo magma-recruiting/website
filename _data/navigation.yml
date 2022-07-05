@@ -1,10 +1,6 @@
 pages:
   - title: Home
     url: /
-  - title: Students
-    url: /students
-  - title: Companies
-    url: /companies
   - title: About
     url: /about
   - title: Contact
