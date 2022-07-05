@@ -9,7 +9,26 @@
   margin-right: auto;
 }
 
+@keyframes cloud-x {
+  from {
+	left: 5px;
+  }
+  to {
+	left: -5px;
+  }
+}
+@keyframes cloud-y {
+  from {
+	top: 5px;
+  }
+  to {
+	top: -5px;
+  }
+}
+
 .logo {
+  position: relative;
+  animation: cloud-x 2s ease-in-out infinite alternate-reverse, cloud-y 3s ease-in-out infinite alternate-reverse;
   width: 100%;
 
   g {
