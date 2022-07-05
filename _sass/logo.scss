@@ -19,16 +19,16 @@
 }
 @keyframes cloud-y {
   from {
-	top: 5px;
+	top: 3px;
   }
   to {
-	top: -5px;
+	top: -3px;
   }
 }
 
 .logo {
   position: relative;
-  animation: cloud-x 2s ease-in-out infinite alternate-reverse, cloud-y 3s ease-in-out infinite alternate-reverse;
+  animation: cloud-x 6s ease-in-out infinite alternate-reverse, cloud-y 2s ease-in-out infinite alternate-reverse;
   width: 100%;
 
   g {
