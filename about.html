@@ -1,5 +1,25 @@
 ---
 title: About
 layout: default
+
+team:
+ - name: Gavin Douch
+   role: Tech/Creative Director 💻
+   link: https://gavindou.ch
+ - name: Matt Nettlefold
+   role: Marketing Director 🎨
+   link: https://www.linkedin.com/in/matthew-nettlefold-480571181/
+ - name: Sarah Soboh
+   role: Strategy Director 📈
+   link: https://www.linkedin.com/in/sarahsoboh/
 ---
 <p>About page text</p>
+<div id="team">
+	{% for member in page.team %}
+	<a href="{{ member.link }}" target="_blank">
+		<img src="https://placekitten.com/400/400" alt="{{ member.name }}'s face">
+		<h2>{{ member.name }}</h2>
+		<p>{{ member.role }}</p>
+	</a>
+	{% endfor %}
+</div>
