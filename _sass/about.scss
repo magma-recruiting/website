@@ -17,10 +17,10 @@
 	  img {
 		@keyframes wave {
 		  from {
-			content: url("/assets/images/team/wave-left.webp")
+			content: $wave-left;
 		  }
 		  to {
-			content: url("/assets/images/team/wave-right.webp")
+			content: $wave-right;
 		  }
 		}
 

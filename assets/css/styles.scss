@@ -2,6 +2,8 @@
 ---
 $background-color: #f4f6fc;
 $background-image: url("{{ '/assets/images/background.png' | relative_url }}");
+$wave-left: url("{{ '/assets/images/team/wave-left.webp' | relative_url }}");
+$wave-right: url("{{ '/assets/images/team/wave-right.webp' | relative_url }}");
 $theme-shadows: -4px 4px #D62828, -8px 8px #F77F00, -12px 12px #FCBF49, -16px 16px #EAE2B7;
 
 @import "navigation";
