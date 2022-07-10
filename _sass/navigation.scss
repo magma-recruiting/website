@@ -20,11 +20,10 @@ nav {
 	  transition: flex 0.5s, box-shadow 0.2s, transform 0.2s;
 
 	  &.currentPage {
-		//flex: 1.3;
+		flex: 1.3;
 	  }
 
 	  &:hover {
-		flex: 1.3;
 		box-shadow: $theme-shadows;
 	  }
 
@@ -42,6 +41,16 @@ nav {
 		align-items: center;
 		padding: 10px;
 		color: white;
+	  }
+	}
+  }
+
+  &:hover {
+	> ul > li {
+	  flex: 1;
+
+	  &:hover {
+		flex: 1.3;
 	  }
 	}
   }
