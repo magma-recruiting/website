@@ -2,6 +2,7 @@
 ---
 $background-color: #f4f6fc;
 $background-image: url("{{ '/assets/images/background.png' | relative_url }}");
+$accent-color: #003049;
 $wave-left: url("{{ '/assets/images/team/wave-left.webp' | relative_url }}");
 $wave-right: url("{{ '/assets/images/team/wave-right.webp' | relative_url }}");
 
@@ -9,7 +10,7 @@ $wave-right: url("{{ '/assets/images/team/wave-right.webp' | relative_url }}");
   display: flex;
   flex: 1;
   border-radius: 15px;
-  background-color: #003049;
+  background-color: $accent-color;
   transition: flex 0.5s, box-shadow 0.2s, transform 0.2s;
   text-decoration: none;
   font-weight: bold;
