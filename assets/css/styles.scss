@@ -4,7 +4,32 @@ $background-color: #f4f6fc;
 $background-image: url("{{ '/assets/images/background.png' | relative_url }}");
 $wave-left: url("{{ '/assets/images/team/wave-left.webp' | relative_url }}");
 $wave-right: url("{{ '/assets/images/team/wave-right.webp' | relative_url }}");
-$theme-shadows: -4px 4px #D62828, -8px 8px #F77F00, -12px 12px #FCBF49, -16px 16px #EAE2B7;
+
+@mixin multi-shadow {
+  display: flex;
+  flex: 1;
+  border-radius: 15px;
+  background-color: #003049;
+  transition: flex 0.5s, box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: center;
+  padding: 10px;
+
+  &, * {
+	color: white;
+  }
+
+  &:hover {
+	box-shadow: -4px 4px #D62828, -8px 8px #F77F00, -12px 12px #FCBF49, -16px 16px #EAE2B7;;
+	flex: 1.3;
+  }
+
+  &:active {
+	box-shadow: -2px 2px #D62828, -4px 4px #F77F00, -6px 6px #FCBF49, -8px 8px #EAE2B7;
+	transform: translate(-8px, 8px);;
+  }
+}
 
 @import "navigation";
 @import "main";

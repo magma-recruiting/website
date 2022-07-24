@@ -1,62 +1,30 @@
 nav {
-  display: flex;
-  margin: 0 auto 0 auto;
   width: 100%;
+  margin: 20px 20px;
+  display: flex;
 
-  > ul {
-	height: 100%;
-	margin: 20px 20px;
-	display: flex;
-	flex: 1;
-	padding: 0;
+  &:first-child {
+	margin-left: 0;
+  }
 
-	> li {
-	  display: flex;
-	  flex: 1;
-	  margin: 0 10px;
-	  border-radius: 15px;
-	  background-color: #003049;
-	  transition: flex 0.5s, box-shadow 0.2s, transform 0.2s;
+  &:last-child {
+	margin-right: 0;
+  }
 
-	  &:first-child {
-		margin-left: 0;
-	  }
+  > a {
+	@include multi-shadow;
+	margin: 0 10px;
 
-	  &:last-child {
-		margin-right: 0;
-	  }
-
-	  &.currentPage {
-		flex: 1.3;
-	  }
-
-	  &:hover {
-		box-shadow: $theme-shadows;
-	  }
-
-	  &:active {
-		box-shadow: -2px 2px #D62828, -4px 4px #F77F00, -6px 6px #FCBF49, -8px 8px #EAE2B7;
-		transform: translate(-8px, 8px);;
-	  }
-
-	  > a {
-		text-decoration: none;
-		font-weight: bold;
-		display: flex;
-		flex: 1;
-		justify-content: center;
-		align-items: center;
-		padding: 10px;
-		color: white;
-	  }
+	&.currentPage {
+	  flex: 1.3;
 	}
+  }
 
-	&:hover > li {
-	  flex: 1;
+  &:hover > a {
+	flex: 1;
 
-	  &:hover {
-		flex: 1.3;
-	  }
+	&:hover {
+	  flex: 1.3;
 	}
   }
 }

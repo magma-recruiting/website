@@ -5,20 +5,34 @@
 	flex: 2;
 	margin-right: 10px;
 
-	a {
-	  display: block;
-	  padding: 10px;
-	  border-radius: 15px;
-	  width: 40%;
-	  text-align: center;
-	  font-weight: bold;
-	  text-decoration: none;
-	  background-color: #003049;
-	  color: white;
-	  transition: width 0.5s;
+	> div {
+	  display: flex;
 
-	  &:hover {
-		width: 50%;
+	  &:first-child {
+		margin-left: 0;
+	  }
+
+	  &:last-child {
+		margin-right: 0;
+	  }
+
+	  a {
+		@include multi-shadow;
+		margin: 0 10px;
+		//display: block;
+		//padding: 10px;
+		//border-radius: 15px;
+		//width: 40%;
+		//text-align: center;
+		//font-weight: bold;
+		//text-decoration: none;
+		//background-color: #003049;
+		//color: white;
+		//transition: width 0.5s;
+		//
+		//&:hover {
+		//width: 50%;
+		//}
 	  }
 	}
   }
