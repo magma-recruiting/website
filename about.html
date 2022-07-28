@@ -22,7 +22,7 @@ team:
 <p>NB: The images below are placeholders.</p>
 <div id="team">
 	{% for member in page.team %}
-	<a href="{{ member.link }}" target="_blank">
+	<a href="javascript:delay('{{ member.link }}')" target="_blank">
 		<img src="{{ '/assets/images/team/no-hand.webp' | relative_url }}" alt="{{ member.name }}'s face">
 		<h2>{{ member.name }}</h2>
 		<p>{{ member.role }}</p>

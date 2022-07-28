@@ -28,7 +28,6 @@
 
 .logo {
   position: relative;
-  //animation: cloud-x 3s ease-in-out infinite alternate-reverse, cloud-y 1s ease-in-out infinite alternate-reverse;
   width: 100%;
 
   g {
@@ -83,6 +82,31 @@
 	  }
 	  &:nth-child(2) {
 		transform: translate(3px, -3px);
+	  }
+	}
+  }
+
+  &.clicked {
+	transition: transform 0.07s;
+	g {
+	  transition: transform 0.2s;
+
+	  &:nth-child(5) {
+		transform: translate(48px, -48px);
+	  }
+	  &:nth-child(4) {
+		transform: translate(36px, -36px);
+	  }
+	  &:nth-child(3) {
+		transform: translate(24px, -24px);
+	  }
+	  &:nth-child(2) {
+		transform: translate(12px, -12px);
+	  }
+
+	  text {
+		font-family: 'Fredoka One', "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 300px;
 	  }
 	}
   }
