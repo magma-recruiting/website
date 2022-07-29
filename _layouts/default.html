@@ -8,6 +8,7 @@ layout: compress
 
 		<!-- Analytics-->
 		{% if jekyll.environment == "production" %}
+			{% include gtag.html %}
 		{% endif %}
 
 		<!-- Generic -->
@@ -41,6 +42,6 @@ layout: compress
 		<div id="main">
 			{{ content }}
 		</div>
-		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Prowl</p>
+		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
 	</body>
 </html>
