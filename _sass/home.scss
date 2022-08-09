@@ -12,35 +12,34 @@
   font-size: 2rem;
   margin-bottom: 0;
   margin-top: 10%;
-}
+  height: 40px;
 
-#party-choice {
-  display: flex;
+  #call-to-action-toggle {
+	display: inline-block;
+	background-color: $accent-color;
+	padding: 0 20px;
+	border-radius: 15px;
+	text-decoration: none;
+	width: 156px;
+	transition: width 0.2s;
 
-  a {
-	@include multi-shadow;
-	margin: 10px;
-	display: block;
-
-	* {
+	> * {
 	  color: white;
 	}
 
-	h2 {
-	  text-align: center;
-	  margin: 10px;
-	}
-
 	img {
-	  margin-left: auto;
-	  margin-right: auto;
-	  display: block;
-	  height: 100px;
-	  width: 100px;
-	}
-
-	p {
-	  text-align: center;
+	  filter: brightness(100);
+	  display: inline;
+	  vertical-align: middle;
+	  transition: rotate 0.2s;
 	}
   }
+}
+
+#call-to-action-go {
+  @include multi-shadow;
+  display: inline-block;
+  width: 150px;
+  padding: 0 20px;
+  margin-top: 20px;
 }

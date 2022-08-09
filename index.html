@@ -1,19 +1,18 @@
 ---
 title: Home
 layout: default
+scripts:
+  - callToActionButton.js
 ---
 <h2 id="motto">Some kind of motto goes here.</h2>
 <p id="description">Slightly more detailed description of what we do here.</p>
-<h3 id="call-to-action">Click below to get started</h3>
-<div id="party-choice">
-	<a href="javascript:delay('{{ '/students' | relative_url }}')">
-		<h2>Students</h2>
-		<img src="{{ '/assets/images/placeholder.webp' | relative_url }}" alt="">
-		<p>Lorem ipsum dolor sit amet</p>
-	</a>
-	<a href="javascript:delay('{{ '/companies' | relative_url }}')">
-		<h2>Companies</h2>
-		<img src="{{ '/assets/images/placeholder.webp' | relative_url }}" alt="">
-		<p>Lorem ipsum dolor sit amet</p>
-	</a>
-</div>
+<h3 id="call-to-action">
+  I am a <a id="call-to-action-toggle" href="javascript:toggle()">
+    <span id="call-to-action-word">Student</span>
+    <img id="call-to-action-chevron" src="{{ '/assets/images/iconsax/arrow-down.svg' | relative_url }}" alt="">
+  </a>
+  <br>
+  Looking for <span id="call-to-action-looking-for">experience</span>
+  <br>
+  <a id="call-to-action-go" href="javascript:delay('{{ '/students' | relative_url }}')">Go!</a>
+</h3>
