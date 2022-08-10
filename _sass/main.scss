@@ -22,9 +22,10 @@ html, body {
 
 body {
   background-color: $background-color;
-  background-image: $background-image;
+  background-image: $top-right-splotch;
   background-position: right top;
   background-repeat: no-repeat;
+  background-size: 45% auto;
 }
 
 p#footer {
