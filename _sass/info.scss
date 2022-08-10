@@ -9,3 +9,36 @@
 #selling-point {
   width: 60%;
 }
+
+.info-section {
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  margin-bottom: 20px;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  &:nth-child(2n + 1) {
+    img {
+      float: right;
+      margin-left: 20px;
+      margin-right: 17%;
+    }
+  }
+
+  &:nth-child(2n) {
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}

@@ -5,3 +5,13 @@ layout: default
 <p>{{ page.underline }}</p>
 <h3><a class="join" href="">Join</a></h3>
 <p id="selling-point">{{ page.selling_point }}</p>
+{% for section in page.sections %}
+	<div class="info-section">
+<!--		{{ '/assets/images/' | append: section.image | relative_url }}-->
+		<img src="https://placekitten.com/400/400" alt="{{ section.title }}">
+		<h3>{{ section.title }}</h3>
+		<p>{{ section.description }}</p>
+	</div>
+{% endfor %}
+<p>{{ page.extra_text }}</p>
+<h3><a class="join" href="">Join</a></h3>
