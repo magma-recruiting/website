@@ -3,6 +3,10 @@
   font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h2, h3 {
+  text-shadow: rgba($background-color, 0.7) 0 0 2px;
+}
+
 h2 {
   font-weight: 700;
 }
@@ -19,7 +23,8 @@ html, body {
 body {
   background-color: $background-color;
   background-image: $background-image;
-  background-repeat: repeat;
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 p#footer {

@@ -5,6 +5,7 @@ nav {
   > a {
 	@include multi-shadow;
 	margin: 0 10px;
+	border: 1px solid rgba($background-color, 0.3);
 
 	&.currentPage {
 	  flex: 1.1;
