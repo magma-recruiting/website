@@ -1,0 +1,11 @@
+.join {
+  @include multi-shadow;
+  display: inline-block;
+  padding: 0 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+#selling-point {
+  width: 60%;
+}
