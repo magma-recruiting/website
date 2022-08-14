@@ -4,14 +4,14 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p>{{ page.underline }}</p>
 <h3><a class="join" href="">Join</a></h3>
-<p id="selling-point">{{ page.selling_point }}</p>
+<p id="selling-point">{{ page.selling_point | markdownify }}</p>
 {% for section in page.sections %}
 	<div class="info-section">
 <!--		{{ '/assets/images/' | append: section.image | relative_url }}-->
 		<img src="https://placekitten.com/400/400" alt="{{ section.title }}">
 		<h3>{{ section.title }}</h3>
-		<p>{{ section.description }}</p>
+		<p>{{ section.description | markdownify }}</p>
 	</div>
 {% endfor %}
-<p>{{ page.extra_text }}</p>
+<p>{{ page.extra_text | markdownify }}</p>
 <h3><a class="join" href="">Join</a></h3>
