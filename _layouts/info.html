@@ -8,7 +8,10 @@ layout: default
 <div>
 	{% for section in page.sections %}
 		<div class="info-section">
-			<img src="{{ '/assets/images/' | append: section.image | relative_url }}" alt="{{ section.title }}">
+			{% assign info_page_folder = page.title | downcase | slugify %}
+			{% assign section_filename = section.title | downcase | slugify | append: '.png' %}
+
+			<img src="{{ '/assets/images/info-icons/' | append: info_page_folder | append: '/' | append: section_filename | relative_url }}" alt="{{ section.title }}">
 			<h3>{{ section.title }}</h3>
 			<p>{{ section.description | markdownify }}</p>
 		</div>
