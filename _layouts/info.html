@@ -7,8 +7,7 @@ layout: default
 <p id="selling-point">{{ page.selling_point | markdownify }}</p>
 {% for section in page.sections %}
 	<div class="info-section">
-<!--		{{ '/assets/images/' | append: section.image | relative_url }}-->
-		<img src="https://placekitten.com/400/400" alt="{{ section.title }}">
+		<img src="{{ '/assets/images/' | append: section.image | relative_url }}" alt="{{ section.title }}">
 		<h3>{{ section.title }}</h3>
 		<p>{{ section.description | markdownify }}</p>
 	</div>
