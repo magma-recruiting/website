@@ -5,12 +5,14 @@ layout: default
 <p>{{ page.underline }}</p>
 <h3><a class="join" href="">Join</a></h3>
 <p id="selling-point">{{ page.selling_point | markdownify }}</p>
-{% for section in page.sections %}
-	<div class="info-section">
-		<img src="{{ '/assets/images/' | append: section.image | relative_url }}" alt="{{ section.title }}">
-		<h3>{{ section.title }}</h3>
-		<p>{{ section.description | markdownify }}</p>
-	</div>
-{% endfor %}
+<div>
+	{% for section in page.sections %}
+		<div class="info-section">
+			<img src="{{ '/assets/images/' | append: section.image | relative_url }}" alt="{{ section.title }}">
+			<h3>{{ section.title }}</h3>
+			<p>{{ section.description | markdownify }}</p>
+		</div>
+	{% endfor %}
+</div>
 <p>{{ page.extra_text | markdownify }}</p>
 <h3><a class="join" href="">Join</a></h3>
