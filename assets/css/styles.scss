@@ -33,7 +33,6 @@ $wave-right: url("{{ '/assets/images/team/wave-right.webp' | relative_url }}");
   }
 }
 
-@import "navigation";
 @import "main";
 @import "logo";
 @import "home";
