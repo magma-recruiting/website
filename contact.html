@@ -13,3 +13,12 @@ layout: default
 		</div>
 	</div>
 </div>
+<div id="team">
+	{% for member in site.data.team %}
+	<a href="javascript:delay('{{ member.link }}')" target="_blank">
+		<img src="{{ '/assets/images/team/no-hand.webp' | relative_url }}" alt="{{ member.name }}'s face">
+		<h2>{{ member.name }}</h2>
+		<p>{{ member.role }}</p>
+	</a>
+	{% endfor %}
+</div>
