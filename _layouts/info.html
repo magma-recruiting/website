@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p>{{ page.underline }}</p>
-<h3><a class="join" href="">Join</a></h3>
-<p id="selling-point">{{ page.selling_point | markdownify }}</p>
+<div id="info-start">
+	<h2>{{ page.title }}</h2>
+	<p>{{ page.underline }} <a class="join" href="">Join</a></p>
+</div>
+<p id="selling-point">{{ page.selling_point }}</p>
+<h2 id="the-process">The process</h2>
 <div>
 	{% for section in page.sections %}
 		{% if section.title == 'hr' %}
@@ -21,5 +23,5 @@ layout: default
 		{% endif %}
 	{% endfor %}
 </div>
-<p>{{ page.extra_text | markdownify }}</p>
-<h3><a class="join" href="">Join</a></h3>
+<p id="extra-text">{{ page.extra_text }}</p>
+<a class="join" href="">Join</a>
