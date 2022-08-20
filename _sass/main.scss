@@ -21,7 +21,6 @@ p, li:not(nav) {
 
 html, body {
   height: 100%;
-  margin: 0;
 }
 
 body {
@@ -30,25 +29,32 @@ body {
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 35% auto;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 p#footer {
-  display: flex;
-  margin: auto;
-  align-items: center;
+  position: relative;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 60px;
+  margin-bottom: 0;
   justify-content: center;
   font-size: small;
-  position: relative;
-  bottom: 60px;
-  height: 60px;
 }
 
 div#main {
   width: 70%;
-  padding-bottom: 60px;
   margin: 0 auto 0 auto;
   position: relative;
-  min-height: calc(100% + 60px);
+  min-height: calc(100% - 90px);
 }
 
 /* Mobile */

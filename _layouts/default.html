@@ -38,8 +38,8 @@ layout: compress
 		{% endfor %}
 	</head>
 	<body>
-		{% include logo.html %}
 		<div id="main">
+			{% include logo.html %}
 			{{ content }}
 		</div>
 		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.title }}. <a href="{{ '/contact' | relative_url }}" tabindex="0">Contact us</a></p>
