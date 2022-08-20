@@ -5,7 +5,7 @@ layout: default
 	<h2>{{ page.title }}</h2>
 	<p>{{ page.underline }} <a class="join" href="">{{ page.call_to_action }}</a></p>
 </div>
-<p id="selling-point">{{ page.selling_point }}</p>
+<p id="selling-point" class="call-out">{{ page.selling_point }}</p>
 <h2 id="the-process">The process</h2>
 <div>
 	{% for section in page.sections %}
@@ -23,5 +23,5 @@ layout: default
 		{% endif %}
 	{% endfor %}
 </div>
-<p id="extra-text">{{ page.extra_text }}</p>
-<a class="join" href="">Join</a>
+<p id="extra-text" class="call-out">{{ page.extra_text }}</p>
+<a class="join" href="">{{ page.call_to_action }}</a>

@@ -11,7 +11,7 @@
   width: 100%;
   padding: 10px;
   height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 15%;
 
   &:first-child {
@@ -64,6 +64,7 @@ hr {
 }
 
 #the-process {
+  margin-top: 0;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 20px;
@@ -85,10 +86,16 @@ hr {
   }
 }
 
-#selling-point, #extra-text {
+.call-out {
   background-color: #EAE2B7;
   padding: 20px;
   border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#selling-point {
+  //margin-top: 20px;
 }
 
 #extra-text {
