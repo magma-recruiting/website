@@ -25,4 +25,4 @@ layout: default
 	{% endfor %}
 </div>
 <p id="extra-text" class="call-out">{{ page.extra_text }}</p>
-<a class="join" href="">{{ page.call_to_action }}</a>
+<button class="join" data-tf-popup="{{ page.typeform_data_tf_popup }}" data-tf-iframe-props="title=Magma" data-tf-medium="snippet">{{ page.call_to_action }}</button>
