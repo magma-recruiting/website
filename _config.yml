@@ -31,15 +31,11 @@ sass:
 
 # SEO
 title: Magma
-tagline: Project Based Work
+tagline: Challenging the recruitment process.
 description: Project-based work for university students.
-author:
-  twitter:
-twitter:
-  username:
-  card: summary
-logo: /assets/images/siteIcons/apple-touch/apple-icon.png
+logo: /assets/images/favicons/favicon-310.png
 social:
-  name: Gavin Douch
+  name: Magma
   links:
+    - https://www.linkedin.com/in/BenBalter
 locale: en-AU
