@@ -3,6 +3,7 @@ timezone: Australia/Melbourne
 permalink: /:title
 
 gtag: G-TH220K7H74
+legal_name: Magma Recruiting
 
 collections:
   posts:
