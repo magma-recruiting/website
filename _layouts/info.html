@@ -3,9 +3,7 @@ layout: default
 ---
 <div id="info-start">
 	<h2>{{ page.title }}</h2>
-	<p>{{ page.underline }} <a class="join" href="">{{ page.call_to_action }}</a></p>
-
-	<button data-tf-popup="uU9kpBPl" data-tf-iframe-props="title=Magma" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#003049;color:#FFFFFF;font-size:18px;border-radius:22px;padding:0 30px;font-weight:bold;height:45px;cursor:pointer;line-height:45px;text-align:center;margin:0;text-decoration:none;">Apply</button>
+	<p>{{ page.underline }} <button class="join" data-tf-popup="{{ page.typeform_data_tf_popup }}" data-tf-iframe-props="title=Magma" data-tf-medium="snippet">{{ page.call_to_action }}</button></p>
 	<script src="//embed.typeform.com/next/embed.js"></script>
 </div>
 <p id="selling-point" class="call-out">{{ page.selling_point }}</p>
