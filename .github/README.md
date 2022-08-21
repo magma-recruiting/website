@@ -1,5 +1,5 @@
 
-<h1 align="center"><a href="https://fastrack-team-1.github.io/website">Prowl</a></h1>
+<h1 align="center"><a href="https://fastrack-team-1.github.io/website">Magma</a></h1>
 <p align="center">Project-based work for university students.</p>
 
 # Tech stack
