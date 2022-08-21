@@ -33,25 +33,42 @@
 #team {
   display: flex;
 
+  @keyframes wave-animation {
+	from {
+	  opacity: 0;
+	}
+
+	50% {
+	  opacity: 1;
+	}
+
+	to {
+	  opacity: 0;
+	}
+  }
+
   a {
 	@include multi-shadow;
 	position: relative;
 	margin: 250px 10px 10px;
 	display: block;
 
+	.wave-left, .wave-right {
+		opacity: 0;
+	}
+
 	&:hover {
-	  img {
-		@keyframes wave {
-		  from {
-			content: $wave-left;
-		  }
+	  .wave-stand {
+		opacity: 0;
+	  }
 
-		  to {
-			content: $wave-right;
-		  }
-		}
+	  .wave-left {
+		animation: wave-animation 0.5s infinite steps(1, start);
+	  }
 
-		animation: wave 0.5s infinite linear alternate-reverse;
+	  .wave-right {
+		animation: wave-animation 0.5s infinite steps(1, start);
+		animation-delay: 0.25s;
 	  }
 	}
 
@@ -73,9 +90,8 @@
 	img {
 	  left: calc(50% - 150px);
 	  width: 300px;
-	  height: 200px;
 	  position: absolute;
-	  top: -200px;
+	  top: -185px;
 	}
   }
 }
