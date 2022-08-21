@@ -8,14 +8,14 @@ layout: default
 		<h1>Get in touch!</h1>
 		<p>We'd love to chat.</p>
 		<div>
-			<a href="javascript:delay('mailto:example.com')">Email</a>
-			<a href="javascript:delay('https://linkedin.com')" target="_blank">LinkedIn</a>
+			<a href="mailto:example.com">Email</a>
+			<a href="https://www.linkedin.com/company/magma-recruiting/" target="_blank">LinkedIn</a>
 		</div>
 	</div>
 </div>
 <div id="team">
 	{% for member in site.data.team %}
-	<a href="javascript:delay('{{ member.link }}')" target="_blank">
+	<a href="{{ member.link }}" target="_blank">
 		<img src="{{ '/assets/images/team/no-hand.webp' | relative_url }}" alt="{{ member.name }}'s face">
 		<h2>{{ member.name }}</h2>
 		<p>{{ member.role }}</p>
