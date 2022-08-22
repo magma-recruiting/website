@@ -40,7 +40,7 @@ p#footer {
   display: block;
   text-align: center;
   vertical-align: middle;
-  height: 40px;
+  height: 60px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -49,11 +49,17 @@ p#footer {
   justify-content: center;
   font-size: 0.9rem;
 
-  #footer-button {
-    @include multi-shadow;
-    display: inline-block;
-    padding: 0 10px;
-    margin-left: 10px;
+  #footer-buttons {
+    display: block;
+    margin-bottom: 15px;
+
+    a {
+      @include multi-shadow;
+      display: inline-block;
+      padding: 0 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
 }
 
@@ -61,5 +67,5 @@ div#main {
   width: 70%;
   margin: 0 auto 0 auto;
   position: relative;
-  min-height: calc(100% - 100px);
+  min-height: calc(100% - 120px);
 }

@@ -43,7 +43,11 @@ layout: compress
 			{{ content }}
 		</div>
 		<p id="footer">
-			Copyright &copy; {{ site.time | date: '%Y' }} {{ site.legal_name }}. <a id="footer-button" href="javascript:delay('{{ '/contact' | relative_url }}')">Contact us</a>
+			<span id="footer-buttons">
+				<a href="javascript:delay('{{ '/contact' | relative_url }}')">Contact us</a>
+				<a href="{{ '/assets/docs/privacy-policy.pdf' | relative_url }}" target="_blank">Privacy policy</a>
+			</span>
+			Copyright &copy; {{ site.time | date: '%Y' }} {{ site.legal_name }}.
 		</p>
 	</body>
 </html>
