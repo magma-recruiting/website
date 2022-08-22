@@ -42,6 +42,8 @@ layout: compress
 			{% include logo.html %}
 			{{ content }}
 		</div>
-		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.legal_name }}. <a href="{{ '/contact' | relative_url }}" tabindex="0">Contact us</a></p>
+		<p id="footer">
+			Copyright &copy; {{ site.time | date: '%Y' }} {{ site.legal_name }}. <a id="footer-button" href="javascript:delay('{{ '/contact' | relative_url }}')">Contact us</a>
+		</p>
 	</body>
 </html>
