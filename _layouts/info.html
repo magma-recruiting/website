@@ -20,6 +20,9 @@ layout: default
 				<img src="{{ '/assets/images/info-icons/' | append: info_page_folder | append: '/' | append: section_filename | relative_url }}" alt="{{ section.title }}">
 				<h3>{{ section.title }}</h3>
 				<p>{{ section.description | markdownify }}</p>
+				{% if section.application_guide %}
+					<a class="application-guide" href="{{ section.application_guide | relative_url }}" target="_blank">Application guide</a>
+				{% endif %}
 			</div>
 		{% endif %}
 	{% endfor %}

@@ -43,7 +43,7 @@
       float: right;
     }
 
-    h3, p {
+    h3, p, .application-guide {
       margin-right: 50%;
     }
   }
@@ -53,7 +53,7 @@
       float: left;
     }
 
-    h3, p {
+    h3, p, .application-guide {
       margin-left: 50%;
     }
   }
@@ -96,4 +96,8 @@ hr {
 
 #extra-text {
   margin-bottom: 80px;
+}
+
+.application-guide {
+  @include multi-shadow;
 }
