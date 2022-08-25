@@ -3,8 +3,9 @@ layout: default
 ---
 <div id="info-start">
 	<h2>{{ page.title }}</h2>
-	<p>{{ page.underline }} <button class="join" data-tf-popup="{{ page.typeform_data_tf_popup }}" data-tf-iframe-props="title=Magma" data-tf-medium="snippet">{{ page.call_to_action }}</button></p>
+	<button class="join" data-tf-popup="{{ page.typeform_data_tf_popup }}" data-tf-iframe-props="title=Magma" data-tf-medium="snippet">{{ page.call_to_action }}</button>
 	<script src="//embed.typeform.com/next/embed.js"></script>
+	<p>{{ page.underline }}</p>
 </div>
 <p id="selling-point" class="call-out">{{ page.selling_point }}</p>
 <h2 id="the-process">The process</h2>

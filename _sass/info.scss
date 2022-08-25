@@ -30,7 +30,7 @@
   h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   img {
@@ -59,15 +59,10 @@
   }
 }
 
-//hr {
-//  margin-top: 10%;
-//  border: 1px solid $accent-color;;
-//}
-
 #the-process {
   margin-top: 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
@@ -79,6 +74,7 @@
 
   p {
     font-size: 1.7rem;
+    text-align: center;
 
     .join {
       margin-left: 20px;
@@ -101,4 +97,8 @@
 
 .application-guide {
   @include multi-shadow;
+}
+
+#selling-point {
+  margin-top: 40px;
 }
