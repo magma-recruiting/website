@@ -10,8 +10,8 @@ layout: default
 <h2 id="the-process">The process</h2>
 <div>
 	{% for section in page.sections %}
-		{% if section.title == 'hr' %}
-			<hr>
+		{% if section.title == 'extra_text' %}
+			<p id="extra-text" class="call-out">{{ page.extra_text }}</p>
 		{% else %}
 			<div class="info-section">
 				{% assign info_page_folder = page.title | downcase | slugify %}
@@ -27,5 +27,4 @@ layout: default
 		{% endif %}
 	{% endfor %}
 </div>
-<p id="extra-text" class="call-out">{{ page.extra_text }}</p>
 <button class="join" data-tf-popup="{{ page.typeform_data_tf_popup }}" data-tf-iframe-props="title=Magma" data-tf-medium="snippet">{{ page.call_to_action }}</button>
