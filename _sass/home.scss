@@ -1,10 +1,10 @@
 #motto {
-  margin-bottom: 15%;
+  margin-bottom: 0;
 }
 
 #call-to-action {
-  margin-bottom: 0;
   margin-top: 5%;
+  margin-bottom: 10%;
 
   #call-to-action-toggle {
 	display: inline-block;
@@ -40,4 +40,42 @@
 #call-to-action-toggle, #call-to-action-go {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#why-use {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 3rem;
+}
+
+#value-prop-summary {
+  width: 100%;
+  display: flex;
+
+  div {
+	width: 100%;
+
+	h2 {
+	  text-align: center;
+	  font-size: 2rem;
+	  //color: #d62828;
+	}
+  }
+
+  ul {
+	padding-left: 0;
+
+	li {
+	  margin-bottom: 20px;
+	  list-style-type: none;
+	  text-align: center;
+	}
+  }
+
+  a {
+	@include multi-shadow;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+  }
 }
