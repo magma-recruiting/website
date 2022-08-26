@@ -25,11 +25,6 @@ html, body {
 
 body {
   background-color: $background-color;
-  background-image: $top-right-splotch;
-  background-position: right top, center bottom;
-  background-repeat: no-repeat;
-  background-size: 35% auto;
-  position: relative;
   min-height: 100%;
   overflow-x: hidden;
   margin: 0;
@@ -70,6 +65,46 @@ p#footer {
     right: 0;
     bottom: 0;
     z-index: -1;
+  }
+}
+
+#top-right-splotch {
+  width: 100%;
+
+  svg {
+    position: absolute;
+    width: 60%;
+
+    &:nth-child(5) {
+      top: calc(-20% + 10px);
+      right: calc(-10% + 10px);
+      fill: #003049;
+    }
+    &:nth-child(4) {
+      top: calc(-20% + 20px);
+      right: calc(-10% + 20px);
+      fill: #D62828;
+    }
+    &:nth-child(3) {
+      top: calc(-20% + 30px);
+      right: calc(-10% + 30px);
+      fill: #F77F00;
+    }
+    &:nth-child(2) {
+      top: calc(-20% + 40px);
+      right: calc(-10% + 40px);
+      fill: #FCBF49;
+    }
+    &:nth-child(1) {
+      top: calc(-20% + 50px);
+      right: calc(-10% + 50px);
+      fill: #EAE2B7;
+    }
+    &:nth-child(0) {
+      top: calc(-20% + 60px);
+      right: calc(-10% + 60px);
+      fill: #EAE2B7;
+    }
   }
 }
 
