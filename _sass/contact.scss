@@ -1,26 +1,21 @@
 #contactBox {
   margin-top: 20px;
-  display: flex;
+  margin-right: 30%;
 
-  div {
-	flex: 2;
-	margin-right: 10px;
+  > div {
+	display: flex;
 
-	> div {
-	  display: flex;
+	&:first-child {
+	  margin-left: 0;
+	}
 
-	  &:first-child {
-		margin-left: 0;
-	  }
+	&:last-child {
+	  margin-right: 0;
+	}
 
-	  &:last-child {
-		margin-right: 0;
-	  }
-
-	  a {
-		@include multi-shadow;
-		margin: 0 10px;
-	  }
+	a {
+	  @include multi-shadow;
+	  margin: 0 10px;
 	}
   }
 }
