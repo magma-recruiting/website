@@ -69,40 +69,55 @@ p#footer {
 }
 
 #top-right-splotch {
-  width: 100%;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
 
   svg {
     position: absolute;
-    width: 65%;
+    width: 100%;
+    height: 100%;
+
+    $upwards-adjustment: -10%;
+    $leftwards-adjustment: -10%;
+    $separation: 10px;
 
     &:nth-child(5) {
-      top: calc(-10% - 50px);
-      right: calc(-10% - 50px);
+      top: calc(#{$upwards-adjustment} - #{5*$separation});
+      right: calc(#{$leftwards-adjustment} - #{5*$separation});
       fill: #003049;
     }
+
     &:nth-child(4) {
-      top: calc(-10% - 40px);
-      right: calc(-10% - 40px);
+      top: calc(#{$upwards-adjustment} - #{4*$separation});
+      right: calc(#{$leftwards-adjustment} - #{4*$separation});
       fill: #D62828;
     }
+
     &:nth-child(3) {
-      top: calc(-10% - 30px);
-      right: calc(-10% - 30px);
+      top: calc(#{$upwards-adjustment} - #{3*$separation});
+      right: calc(#{$leftwards-adjustment} - #{3*$separation});
       fill: #F77F00;
     }
+
     &:nth-child(2) {
-      top: calc(-10% - 20px);
-      right: calc(-10% - 20px);
+      top: calc(#{$upwards-adjustment} - #{2*$separation});
+      right: calc(#{$leftwards-adjustment} - #{2*$separation});
       fill: #FCBF49;
     }
+
     &:nth-child(1) {
-      top: calc(-10% - 10px);
-      right: calc(-10% - 10px);
+      top: calc(#{$upwards-adjustment} - #{1*$separation});
+      right: calc(#{$leftwards-adjustment} - #{1*$separation});
       fill: #EAE2B7;
     }
+
     &:nth-child(0) {
-      top: calc(-10% + 0px);
-      right: calc(-10% + 0px);
+      top: calc(#{$upwards-adjustment} - #{0*$separation});
+      right: calc(#{$leftwards-adjustment} + #{0*$separation});
       fill: #EAE2B7;
     }
   }
