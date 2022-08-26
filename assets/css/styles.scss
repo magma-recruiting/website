@@ -41,6 +41,7 @@ $wave-right: url("{{ '/assets/images/team/wave-right.webp' | relative_url }}");
 /* Mobile */
 @media only screen and (max-width: 480pt) {
   @import "main.mobile";
+  @import "home.mobile";
   @import "info.mobile";
   @import "contact.mobile";
 }
