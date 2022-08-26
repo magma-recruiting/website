@@ -50,12 +50,18 @@ layout: compress
 			{{ content }}
 		</div>
 		<p id="footer">
+			<span id="bottom-splotch">
+				{% include bottom-splotch.html %}
+				{% include bottom-splotch.html %}
+				{% include bottom-splotch.html %}
+				{% include bottom-splotch.html %}
+				{% include bottom-splotch.html %}
+			</span>
 			<span id="footer-buttons">
 				<a href="javascript:delay('{{ '/contact' | relative_url }}')">Contact us</a>
 				<a href="{{ '/assets/docs/privacy-policy.pdf' | relative_url }}" target="_blank">Privacy policy</a>
 			</span>
 			Copyright &copy; {{ site.time | date: '%Y' }} {{ site.legal_name }}.
-			<img src="{{ '/assets/images/splotches/bottom.webp' | relative_url }}" alt="">
 		</p>
 	</body>
 </html>
