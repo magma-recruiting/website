@@ -39,11 +39,9 @@ layout: compress
 	</head>
 	<body>
 		<div id="top-right-splotch">
-			{% include top-right-splotch.html %}
-			{% include top-right-splotch.html %}
-			{% include top-right-splotch.html %}
-			{% include top-right-splotch.html %}
-			{% include top-right-splotch.html %}
+			{% for _ in (0..4) %}
+				{% include top-right-splotch.html %}
+			{% endfor %}
 		</div>
 		<div id="main">
 			{% include logo.html %}
@@ -51,11 +49,9 @@ layout: compress
 		</div>
 		<p id="footer">
 			<span id="bottom-splotch">
-				{% include bottom-splotch.html %}
-				{% include bottom-splotch.html %}
-				{% include bottom-splotch.html %}
-				{% include bottom-splotch.html %}
-				{% include bottom-splotch.html %}
+				{% for _ in (0..4) %}
+					{% include bottom-splotch.html %}
+				{% endfor %}
 			</span>
 			<span id="footer-buttons">
 				<a href="javascript:delay('{{ '/contact' | relative_url }}')">Contact us</a>
