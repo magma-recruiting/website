@@ -38,14 +38,14 @@ layout: compress
 		{% endfor %}
 	</head>
 	<body>
+		<div id="main">
+			{% include logo.html %}
+			{{ content }}
+		</div>
 		<div id="top-right-splotch">
 			{% for _ in (0..4) %}
 				{% include top-right-splotch.html %}
 			{% endfor %}
-		</div>
-		<div id="main">
-			{% include logo.html %}
-			{{ content }}
 		</div>
 		<p id="footer">
 			<span id="bottom-splotch">
