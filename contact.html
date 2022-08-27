@@ -12,13 +12,13 @@ layout: default
 </div>
 <div id="team">
 	{% for member in site.data.team %}
-	<a href="{{ member.link }}" target="_blank">
-		{% assign member_name_slug = member.name | slugify %}
-		<img src="{{ '/assets/images/team/' | append: member_name_slug | append: '/stand.webp' | relative_url }}" class="wave-stand" alt="{{ member.name }}'s face">
-		<img src="{{ '/assets/images/team/' | append: member_name_slug | append: '/left.webp' | relative_url }}" class="wave-left" alt="{{ member.name }}'s face">
-		<img src="{{ '/assets/images/team/' | append: member_name_slug | append: '/right.webp' | relative_url }}" class="wave-right" alt="{{ member.name }}'s face">
-		<h2>{{ member.name }}</h2>
-		<p>{{ member.role }}</p>
-	</a>
+		<a href="{{ member.link }}" target="_blank">
+			{% assign member_name_slug = member.name | slugify %}
+			<img src="{{ '/assets/images/team/' | append: member_name_slug | append: '/stand.webp' | relative_url }}" class="wave-stand" alt="{{ member.name }}'s face">
+			<img src="{{ '/assets/images/team/' | append: member_name_slug | append: '/left.webp' | relative_url }}" class="wave-left" alt="{{ member.name }}'s face">
+			<img src="{{ '/assets/images/team/' | append: member_name_slug | append: '/right.webp' | relative_url }}" class="wave-right" alt="{{ member.name }}'s face">
+			<h2>{{ member.name }}</h2>
+			<p>{{ member.role }}</p>
+		</a>
 	{% endfor %}
 </div>
