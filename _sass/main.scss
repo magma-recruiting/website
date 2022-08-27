@@ -59,7 +59,7 @@ p#footer {
 }
 
 #bottom-splotch {
-  width: calc(100% + 50px);
+  width: 100%;
   height: 300px;
   position: absolute;
   bottom: 0;
@@ -69,11 +69,11 @@ p#footer {
 
   svg {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: calc(100% + 50px);
+    height: 270px;
 
-    $upwards-adjustment: 0%;
-    $leftwards-adjustment: 0%;
+    $upwards-adjustment: 5px;
+    $leftwards-adjustment: -50px;
     $separation: 10px;
 
     &:nth-child(5) {
