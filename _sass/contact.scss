@@ -5,17 +5,17 @@
   > div {
 	display: flex;
 
-	&:first-child {
-	  margin-left: 0;
-	}
-
-	&:last-child {
-	  margin-right: 0;
-	}
-
 	a {
 	  @include multi-shadow;
 	  margin: 0 10px;
+
+	  &:first-child {
+		margin-left: 0;
+	  }
+
+	  &:last-child {
+		margin-right: 0;
+	  }
 	}
   }
 }
